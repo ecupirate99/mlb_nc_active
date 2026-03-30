@@ -1,0 +1,5 @@
+{
+  "name": "NC MLB Hitters Stats",
+  "description": "API and dashboard to find non-pitcher MLB players born in North Carolina and view their career stats.",
+  "requestFramePermissions": []
+}
