@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# NC MLB Hitters Stats
 
-# Run and deploy your AI Studio app
+A full-stack application to find and view career statistics for MLB hitters born in North Carolina.
 
-This contains everything you need to run your app locally.
+## Features
+- **MLB Stats API Integration**: Fetches real-time career data.
+- **Optimized Backend**: Express server with 24-hour caching.
+- **Modern UI**: Sortable, searchable data grid with horizontal scrolling.
 
-View your app in AI Studio: https://ai.studio/apps/32b516e4-cebf-4d45-b375-9e6cd58c22e4
+## Local Development
+1. Clone the repository.
+2. Install dependencies: `npm install`
+3. Start the dev server: `npm run dev`
 
-## Run Locally
+## Deployment
 
-**Prerequisites:**  Node.js
+### GitHub
+1. Create a new repository on GitHub.
+2. Push your code:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin <your-repo-url>
+   git push -u origin main
+   ```
 
+### Vercel
+1. Connect your GitHub repository to Vercel.
+2. Vercel will automatically detect the Vite project.
+3. The `vercel.json` and `api/index.ts` files are pre-configured to handle the Express backend.
+4. Ensure the Build Command is `npm run build` and the Output Directory is `dist`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Environment Variables
+- `GEMINI_API_KEY`: (Optional) If you decide to add AI features later.
+- `APP_URL`: Automatically set by the environment.
